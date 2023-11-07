@@ -1,0 +1,63 @@
+import { useRef } from "react";
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from "react-parallax-mouse";
+import { BuyNowButton } from "./BuyNowButton";
+import { HeroBigText } from "./HeroBigText";
+import { Nav } from "./Nav";
+import { SkipNav } from "./SkipNav";
+
+export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const bigCookieRef = useRef<HTMLImageElement>(null);
+
+  return (
+    <section
+      ref={sectionRef}
+      className={`full-height bg-gradient-to-bl from-hero to-hero-dark text-hero-typograph relative`}
+      style={{ boxShadow: '0px 10px 10px rgb(var(--color-hero-dark)/0.5)' }}
+    >
+      <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}
+      >
+        <SkipNav />
+        <div className="gu-container full-height flex flex-col pt-2 z-10 relative">
+          <Nav />
+          <HeroBigText />
+          <BuyNowButton />
+        </div>
+
+
+        <div className=" w-80 h-80 top-0 bottom-0 m-auto left-0 right-0 absolute z-20 animate-[goUpCookie_1.2s_2.5s_both]">
+          <MouseParallaxChild
+            factorX={0.5}
+            factorY={0.6}
+            className="w-full h-full"
+          >
+            <img
+              ref={bigCookieRef}
+              className="w-full h-full hover:opacity-20 transition duration-700 "
+              src={cookieImg}
+              alt=""
+            />
+          </MouseParallaxChild>
+        </div>
+
+        <img
+          className="absolute left-0 top-0 z-10 w-[25%] pointer-events-none animate-[goDown_0.8s_0.1s_both]"
+          src={dotsImg}
+          alt=""
+        />
+        <img
+          className="absolute right-0 top-0 z-10 w-[25%] pointer-events-none animate-[goDown_0.8s_0.1s_both]"
+          src={dotsImg}
+          alt=""
+        />
+      </MouseParallaxContainer>
+    </section>
+  );
+}
+
+
+const dotsImg = "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/dots-left.png"
+const cookieImg = "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/hero"
