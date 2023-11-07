@@ -15,7 +15,9 @@ const config: Config = {
           typograph: "#CDE8C5"
         },
         contact: {
-          DEFAULT:'#F64141'
+          DEFAULT:'#F64141',
+          light:"#f87171",
+          icon:"#564138"
         },
         introduction: {
             DEFAULT:'#497B7A',

@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root,
+main {
+  height: 100lvh;
+  height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
+
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-hero: 133 173 121;
+    --color-hero-dark: 86 125 75;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .full-height {
+    min-height: 100lvh;
+    min-height: 100vh;
+  }
+
+  .gu-container {
+    padding-left: 4%;
+    padding-right: 4%;
+    width: min(100vw, 900px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-container {
+    padding-left: 4%;
+    padding-right: 4%;
+    width: min(100vw, 1100px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-shadow {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .15)
+  }
+
+  .text-shadow-sm {
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, .10)
+  }
+}
+
+
+.poi-info-window div.title{
+  color:#503824
+}
+.poi-info-window div.address-line{
+  color:#3a291a
+}
+
+.map-marker {
+  margin-top: -30px;
+  color: #63452c;
+  stroke: #EBF4A4;
 }
