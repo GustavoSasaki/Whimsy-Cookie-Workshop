@@ -19,13 +19,18 @@ const config: Config = {
         },
         introduction: {
             DEFAULT:'#497B7A',
-            light:'#5D9A99'
+            light:'#5D9A99',
+            lighter:'#83C9C8',
+            lightest:'#c8e7f2'
 
         },
         about: {
           DEFAULT: '#f48f00',
           light: '#f7ac1f',
           lighter:'#fff2c4'
+        },
+        cookie:{
+          DEFAULT:'#503824'
         }
       },
       animation:{
