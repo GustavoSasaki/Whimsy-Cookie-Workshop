@@ -8,7 +8,6 @@ main {
   height: 100vh;
 }
 
-
 @layer base {
   :root {
     --color-hero: 133 173 121;
@@ -39,24 +38,23 @@ main {
   }
 
   .text-shadow {
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, .15)
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   }
 
   .text-shadow-sm {
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, .10)
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
-
-.poi-info-window div.title{
-  color:#503824
+.poi-info-window div.title {
+  color: #503824;
 }
-.poi-info-window div.address-line{
-  color:#3a291a
+.poi-info-window div.address-line {
+  color: #3a291a;
 }
 
 .map-marker {
   margin-top: -30px;
   color: #63452c;
-  stroke: #EBF4A4;
+  stroke: #ebf4a4;
 }
