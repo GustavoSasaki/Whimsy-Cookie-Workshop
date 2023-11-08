@@ -32,7 +32,8 @@ const config: Config = {
           lighter:'#fff2c4'
         },
         cookie:{
-          DEFAULT:'#503824'
+          DEFAULT:'#503824',
+          dark:'#2f2013'
         }
       },
       animation:{

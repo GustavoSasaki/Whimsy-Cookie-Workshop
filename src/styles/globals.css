@@ -37,6 +37,12 @@ main {
     margin-right: auto;
   }
 
+  .menu-container {
+    margin-left: 4%;
+    margin-right: 4%;
+    max-width: min(100vw, 1100px);
+  }
+
   .text-shadow {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   }

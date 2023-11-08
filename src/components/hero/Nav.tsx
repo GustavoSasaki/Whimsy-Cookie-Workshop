@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import { AboutRefContext, ContactRefContext } from "./NavContextProvider";
+import { AboutRefContext, ContactRefContext, MenuRefContext } from "./NavContextProvider";
 import { scrollToPosition } from "./scrollToPosition";
 
 export function Nav() {
   const aboutRef = useContext(AboutRefContext);
   const contactRef = useContext(ContactRefContext);
+  const menuRef = useContext(MenuRefContext);
 
   return (
     <header>
@@ -18,14 +19,16 @@ export function Nav() {
         >
           about
         </button>
-        <a href=".">
+        <a href="." className="hover:scale-110 transition-all">
           <img
             className=" w-[80px] h-[80px]"
             src={logoImg}
             alt="Whimsy Cookie Workshop"
           ></img>
         </a>
-        <a className="hover:text-white">menu</a>
+        <button className="hover:text-white"
+          onClick={() => scrollToPosition(menuRef)}
+        >menu</button>
         <button
           onClick={() => scrollToPosition(contactRef)}
           className="hover:text-white"
