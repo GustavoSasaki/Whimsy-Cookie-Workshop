@@ -2,7 +2,6 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useContext, useRef } from "react";
 import { AboutRefContext } from "../hero/NavContextProvider";
 import { AboutImgs } from "./AboutImgs";
-import ShopImage from "./ShopImage";
 
 export default function About() {
   const aboutRef = useContext(AboutRefContext);

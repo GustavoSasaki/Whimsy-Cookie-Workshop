@@ -16,7 +16,7 @@ const config: Config = {
         },
         contact: {
           DEFAULT:'#F64141',
-          light:"#f87171",
+          light:'rgb(var(--color-contact-light) / <alpha-value>)',
           icon:"#564138"
         },
         introduction: {

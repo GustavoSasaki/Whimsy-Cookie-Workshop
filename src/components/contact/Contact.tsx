@@ -11,6 +11,9 @@ export default function Contact() {
       tabIndex={-1}
       ref={contactRef}
       className="bg-gradient-to-br from-contact to-contact-light text-white py-20"
+      style={{
+        boxShadow: "0px 10px 10px rgb(var(--color-contact-light)/0.5)" 
+    }}
     >
       <div className="div section-container">
         <h2 className="uppercase text-6xl font-bold text-shadow ">
