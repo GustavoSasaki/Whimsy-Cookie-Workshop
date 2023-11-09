@@ -8,7 +8,11 @@ export function Menu() {
 
     return (
         <section
-            className="from-[#e0cc82] bg-gradient-to-bl to-green-600 py-28 text-cookie">
+            className="from-[#e0cc82] bg-gradient-to-bl to-green-600 py-28 text-cookie"
+            style={{
+                boxShadow: "0px 10px 10px rgb(22 163 74/0.5)" 
+            }}
+            >
             <div
                 tabIndex={-1}
                 ref={menuRef}
