@@ -15,7 +15,7 @@ export function ScrollingText({ text, height, x }: { text: string, height: strin
                 className="absolute z-40  whitespace-nowrap"
                 style={{
                     x,
-                    '-webkit-text-stroke': '2px #2f2013',
+                    WebkitTextStroke: '2px #2f2013',
                     'color': 'rgba(51, 51, 51, 0)',
                 }}
             >{text}</motion.p>

@@ -5,7 +5,7 @@ import { useRef } from "react";
 const containerStyle = {
   width: "100%",
   color: "blue",
-  "aspect-ratio": "9 / 6",
+  aspectRatio: "9 / 6",
   borderRadius: '0.375rem'
 };
 
