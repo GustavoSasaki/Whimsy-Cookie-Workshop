@@ -12,11 +12,7 @@ export default function About() {
       ref={aboutRef}
       className="bg-white text-cookie section-container my-24"
     >
-      <div
-      id="about-grid"
-        className="grid text-xl font-medium gap-10 "
-      >
-
+      <div id="about-grid" className="grid text-xl font-medium gap-10 ">
         <h2 className="uppercase text-6xl text-about font-bold [grid-area:title]">
           {"About "}
           <span className="text-about-light">Us</span>
@@ -25,7 +21,7 @@ export default function About() {
         <AboutImgs />
         <div
           style={{
-            gridArea:"text",
+            gridArea: "text",
             flex: "1 1 0%",
           }}
         >

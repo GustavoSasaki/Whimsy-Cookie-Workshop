@@ -6,7 +6,7 @@ const containerStyle = {
   width: "100%",
   color: "blue",
   aspectRatio: "9 / 6",
-  borderRadius: '0.375rem'
+  borderRadius: "0.375rem",
 };
 
 const center = {

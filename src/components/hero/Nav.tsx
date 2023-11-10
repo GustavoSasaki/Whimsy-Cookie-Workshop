@@ -1,5 +1,9 @@
 import { useContext } from "react";
-import { AboutRefContext, ContactRefContext, MenuRefContext } from "./NavContextProvider";
+import {
+  AboutRefContext,
+  ContactRefContext,
+  MenuRefContext,
+} from "./NavContextProvider";
 import { scrollToPosition } from "./scrollToPosition";
 
 export function Nav() {
@@ -26,9 +30,12 @@ export function Nav() {
             alt="Whimsy Cookie Workshop"
           ></img>
         </a>
-        <button className="hover:text-white"
+        <button
+          className="hover:text-white"
           onClick={() => scrollToPosition(menuRef)}
-        >menu</button>
+        >
+          menu
+        </button>
         <button
           onClick={() => scrollToPosition(contactRef)}
           className="hover:text-white"

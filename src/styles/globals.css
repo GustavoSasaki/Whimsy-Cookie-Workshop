@@ -19,8 +19,6 @@ main {
       --container-padding: 15px;
     }
   }
-
-    
 }
 
 @layer components {
@@ -71,7 +69,7 @@ main {
   }
 
   .text-shadow-lg {
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.50);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
 
   .text-shadow-sm {
@@ -79,10 +77,10 @@ main {
   }
 
   .text-stroke-cookie {
-    -webkit-text-stroke: 2px #2f2013
+    -webkit-text-stroke: 2px #2f2013;
   }
   .text-stroke-white {
-    -webkit-text-stroke: 2px white
+    -webkit-text-stroke: 2px white;
   }
 }
 
@@ -99,7 +97,7 @@ main {
   stroke: #ebf4a4;
 }
 
-#about-grid{
+#about-grid {
   grid-template-areas: "title" "text" "image";
   grid-template-columns: 1fr;
 

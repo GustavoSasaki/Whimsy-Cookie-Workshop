@@ -8,7 +8,7 @@ export function BuyNowButton() {
     <div className="group mx-auto relative  w-[fit-content] mb-4 animate-[goUp_2s_3s_both] hover:scale-105 transition-all">
       <button
         onClick={() => scrollToPosition(menuRef)}
-      className="relative text-2xl bg-gradient-to-bl from-red-400 to-red-500 text-white mx-auto rounded-lg p-2 z-20"
+        className="relative text-2xl bg-gradient-to-bl from-red-400 to-red-500 text-white mx-auto rounded-lg p-2 z-20"
       >
         Buy Now
       </button>

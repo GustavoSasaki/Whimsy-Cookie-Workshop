@@ -32,25 +32,32 @@ export default function Address() {
       className="text-xl p-3 font-medium text-shadow-sm"
       ref={addressRef}
       style={{
-        y:(isMobile ? 0 : y),
+        y: isMobile ? 0 : y,
       }}
     >
       <div className="flex mb-3">
-        <AiOutlinePhone aria-label="phone" aria-describedby="phone"
-          className="w-[30px] h-[30px] mr-2 text-contact-icon" />
-        <a id="phone" href="tel:0123456789">(01) 2345-6789</a>
+        <AiOutlinePhone
+          aria-label="phone"
+          aria-describedby="phone"
+          className="w-[30px] h-[30px] mr-2 text-contact-icon"
+        />
+        <a id="phone" href="tel:0123456789">
+          (01) 2345-6789
+        </a>
       </div>
       <div
         aria-label="Working time"
         aria-describedby="working-time"
-        className="flex mb-3">
+        className="flex mb-3"
+      >
         <AiOutlineClockCircle className="w-[30px] h-[30px] mr-2 text-contact-icon" />
-        <p id="working-time" >
+        <p id="working-time">
           seg-sab das <time dateTime="09:00:00">9</time>-
           <time dateTime="18:00:00">18h</time>
         </p>
       </div>
-      <div className="flex mb-3"
+      <div
+        className="flex mb-3"
         aria-label="location"
         aria-describedby="location"
       >
@@ -60,11 +67,15 @@ export default function Address() {
           <br /> São Carlos, Brazil
         </p>
       </div>
-      <div className="flex mb-6"
+      <div
+        className="flex mb-6"
         aria-label="whattsapp"
-        aria-describedby="whattsapp">
+        aria-describedby="whattsapp"
+      >
         <AiOutlineWhatsApp className="w-[30px] h-[30px] mr-2 text-contact-icon" />
-        <a id="whattsapp" href="tel:0123456789">(01) 2345-6789</a>
+        <a id="whattsapp" href="tel:0123456789">
+          (01) 2345-6789
+        </a>
       </div>
 
       <div className="flex ml-[30px]">

@@ -6,8 +6,7 @@ export const scrollToPosition = (ref: HtmlRef) => {
 
   const reduceMotion = getPrefersReducedMotion();
   ref.current.scrollIntoView({
-    behavior:
-      !reduceMotion ? "smooth" : undefined,
+    behavior: !reduceMotion ? "smooth" : undefined,
   });
 
   ref.current.focus({ preventScroll: true });

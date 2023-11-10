@@ -21,9 +21,10 @@ export function AboutImgs() {
 
   return (
     <div className="mt-20 w-[80vw] max-w-[500px] lg:w-[30vw] box-border relative mx-auto lg:ml-8 lg:-mt-[1vw] [grid-area:image]">
-      <div 
-      className=" lg:left-0 left-[10%]
-      overflow-hidden relative top-0  mx-auto lg:mr-0 rounded-lg aspect-[7/9] w-8/12 lg:aspect-[6/9] z-40  mb-[16vw]">
+      <div
+        className=" lg:left-0 left-[10%]
+      overflow-hidden relative top-0  mx-auto lg:mr-0 rounded-lg aspect-[7/9] w-8/12 lg:aspect-[6/9] z-40  mb-[16vw]"
+      >
         <motion.img
           ref={imageRef}
           className="relative top-[-13%] h-[128%] w-full rounded-lg"
