@@ -98,3 +98,13 @@ main {
   color: #63452c;
   stroke: #ebf4a4;
 }
+
+#about-grid{
+  grid-template-areas: "title" "text" "image";
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1024px) {
+    grid-template-areas: "nothing title" "image text";
+    grid-template-columns: auto 1fr;
+  }
+}

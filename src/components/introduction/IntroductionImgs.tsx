@@ -21,7 +21,7 @@ export function IntroductionImgs() {
   return (
     <div className=" w-[80vw] max-w-[500px] mx-auto lg:w-[44vw] lg:max-w-[400px] box-border relative">
       <div className="overflow-hidden relative top-0  rounded-lg w-8/12 aspect-[7/9] lg:aspect-[6/9] z-40 lg:mx-0
-      mx-auto md:mx-auto -left-[16%] md:left-auto
+      mx-auto -left-[16%] md:left-auto
       ">
         <motion.img
           ref={imageRef}
