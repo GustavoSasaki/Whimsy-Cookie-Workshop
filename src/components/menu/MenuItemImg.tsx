@@ -1,7 +1,9 @@
 import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
+import { IsMobileContext } from "../hero/IsMobileContextProvider";
 
-export function MenuItemImg({name, img}:{name:string;img:string}) {
+export function MenuItemImg({ name, img }: { name: string; img: string }) {
+    const isMobile = useContext(IsMobileContext);
 
     const addressRef = useRef(null);
 
@@ -10,16 +12,34 @@ export function MenuItemImg({name, img}:{name:string;img:string}) {
         offset: ["end start", "start end"],
     });
 
+    const scaleRange = isMobile ? { input: [1], output: [1] } : scaleRangesPc
+
+    const grayScaleRange = isMobile ? grayScaleRangeMobile : grayScaleRangePc
 
     const opacity = useTransform(scrollYProgress, [0, 0.2, 0.40, 0.60, 0.8, 1], ["0.7", "0.90", "1", "1", "0.90", "0.7"]);
-    const grayScale = useTransform(scrollYProgress, [0, 0.3, 0.40, 0.60, 0.7, 1], ["0.9", "0.35", "0", "0", "0.35", "0.9"]);
+    const grayScale = useTransform(scrollYProgress, grayScaleRange.input, grayScaleRange.output);
     const filter = useTransform(grayScale, scale => `grayscale(${scale})`);
-    const scale = useTransform(scrollYProgress, [0, 0.3, 0.40, 0.60, 0.7, 1], ["0.7", "0.9", "1.4", "1.4", "0.9", "0.7"]);
+    const scale = useTransform(scrollYProgress, scaleRange.input, scaleRange.output)
 
     return (
         <motion.img ref={addressRef}
             style={{ opacity, filter, scale }}
             alt={name}
-            src={img} className="absolute top-[60px] bottom-0 right-0 left-0 w-[150px] aspect-[8/10] object-cover m-auto rounded-md" />
+            src={img} className=" my-4  md:my-0 md:absolute top-[100px] bottom-0 right-0 left-0 w-[min(200px,60%)] md:max-w-none md:w-[150px] aspect-square md:aspect-[8/10] object-cover m-auto rounded-md mb-3 md:mb-0" />
     )
+}
+
+const scaleRangesPc = {
+    input: [0, 0.3, 0.40, 0.60, 0.7, 1],
+    output: [0.7, 0.9, 1.4, 1.4, 0.9, 0.7]
+}
+
+const grayScaleRangePc = {
+    input: [0, 0.3, 0.40, 0.60, 0.7, 1],
+    output:  [0.9, 0.35, 0, 0, 0.35, 0.9]
+}
+
+const grayScaleRangeMobile = {
+    input: [0, 0.3, 0.40, 0.60, 0.7, 1],
+    output:  [0.35, 0.15, 0, 0, 0.15, 0.35]
 }

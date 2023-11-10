@@ -3,7 +3,7 @@ import { ReadMoreButton } from "./ReadMoreButton";
 
 export default function Introduction() {
   return (
-    <section className="bg-white text-cookie section-container my-28">
+    <section className="bg-white text-cookie section-container mt-28 my-40 md:my-28">
       <h2
         className="uppercase text-6xl text-introduction
              font-bold"

@@ -16,7 +16,7 @@ export function Menu() {
             <div
                 tabIndex={-1}
                 ref={menuRef}
-                className="menu-container mx-auto max-w-[900px]">
+                className="menu-container max-w-[900px]">
                 <h2 className="uppercase text-6xl font-bold text-shadow text-white pb-5">
                     The Menu
                 </h2>

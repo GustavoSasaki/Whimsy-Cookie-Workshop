@@ -10,10 +10,10 @@ export interface Recipe {
 export function MenuItem({ name, description, price, img }: Recipe) {
 
     return (
-        <div className={`flex gap-8  justify-between my-3 items-start py-4`}>
+        <div className={`flex flex-col md:flex-row gap-0 md:gap-8  justify-between my-3 items-start py-4`}>
 
-            <div className="grow">
-                <div className="flex flex-row justify-between text-2xl text-cookie-dark max-w-[650px]">
+            <div className="grow w-full md:w-auto">
+                <div className="flex flex-row justify-between text-2xl text-cookie-dark md:max-w-[650px]">
                     <p className="font-medium ">{name}</p>
                     <div className="grow mx-[13px] h-full mt-5"
                         style={{
@@ -28,7 +28,7 @@ export function MenuItem({ name, description, price, img }: Recipe) {
                 </div>
                 <p className="font-normal max-w-[40ch]">{description}</p>
             </div>
-            <div className="w-[195px] relative">
+            <div className="w-full md:w-[195px] relative">
                 {img &&
                     <MenuItemImg name={name} img={img} />
                 }
