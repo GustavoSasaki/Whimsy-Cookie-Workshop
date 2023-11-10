@@ -12,11 +12,12 @@ export function ScrollingText({ text, height, x }: { text: string, height: strin
             >{text}</motion.p>
 
             <motion.p
-                className="absolute z-40  whitespace-nowrap"
+                id="text-front-shop"
+                className="absolute z-40 text-stroke-white sm:text-stroke-cookie whitespace-nowrap  text-white sm:text-transparent
+                sm:text-shadow-none text-shadow-lg
+                "
                 style={{
                     x,
-                    WebkitTextStroke: '2px #2f2013',
-                    'color': 'rgba(51, 51, 51, 0)',
                 }}
             >{text}</motion.p>
         </div>

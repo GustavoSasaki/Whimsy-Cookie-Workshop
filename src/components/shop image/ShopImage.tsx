@@ -1,12 +1,15 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
+import { IsMobileContext } from "../hero/IsMobileContextProvider";
 import { ScrollingText } from "./ScrollingText";
 
 
 //to-do
 //put button to buy in whattsup
+//reduce mb of images
 
 export default function ShopImage() {
+  const isMobile = useContext(IsMobileContext);
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -23,7 +26,7 @@ export default function ShopImage() {
   const xImgs = useTransform(
     yProgressSpring,
     [0.2, 0.8],
-    ["-40vw", "0vw"],
+    !isMobile ? ["-40vw", "0vw"] : ["-30vw", "0vw"]
   );
 
   const xPerfectCookies = useTransform(
@@ -52,19 +55,23 @@ export default function ShopImage() {
 
   return (
     <div className="mt-28 mb-32">
-      <div className="relative h-[400vh] mx-auto" ref={containerRef}>
-        <div className="sticky top-0 rounded-lg h-screen w-screen z-0 overflow-hidden">
+      <div className="relative h-[500vh] md:h-[400vh] mx-auto" ref={containerRef}>
+        <div className="sticky top-0 rounded-lg h-screen w-screen z-0 overflow-x-hidden ">
 
           <ScrollingText text={"PERFECT COOKIES"} height={'top-[15vh]'} x={xPerfectCookies} />
-          <ScrollingText text={"COOL MUSIC"} height={'top-[50vh]'} x={xCoolMusic} />
+          <div className="hidden lg:block">
+            <ScrollingText text={"COOL MUSIC"} height={'top-[50vh]'} x={xCoolMusic} />
+          </div>
           <ScrollingText text={"GOOD VIBES"} height={'top-[75vh]'} x={xGoodVibes} />
-          <ScrollingText text={"HAVE A NICE DAY"} height={'top-[90vh]'} x={xLast} />
+          <div className="hidden lg:block">
+            <ScrollingText text={"HAVE A NICE DAY"} height={'top-[90vh]'} x={xLast} />
+          </div>
 
 
-          <div className="relative h-screen w-[70vw] overflow-hidden mx-auto z-0 ">
+          <div className="relative h-screen  w-screen  md:w-[70vw] overflow-x-hidden mx-auto z-0 ">
             <motion.img
               src={imgShop}
-              className="absolute top-[10vh] h-[80vh] w-[110vw] left-0 max-w-none object-cover rounded-lg"
+              className="absolute top-[10vh] h-[80vh] w-[130vw] md:w-[110vw] left-0 max-w-none object-cover rounded-lg"
               style={{
                 x: xImgs,
               }}
