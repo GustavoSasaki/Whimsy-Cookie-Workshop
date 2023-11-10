@@ -15,12 +15,12 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className={`full-height bg-gradient-to-bl from-hero to-hero-dark text-hero-typograph relative`}
+      className={`hero-height bg-gradient-to-bl from-hero to-hero-dark text-hero-typograph relative w-full`}
       style={{ boxShadow: "0px 10px 10px rgb(var(--color-hero-dark)/0.5)" }}
     >
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
         <SkipNav />
-        <div className="gu-container full-height flex flex-col pt-2 z-10 relative">
+        <div className="md:gu-container  hero-height flex flex-col pt-2 z-10 relative">
           <Nav />
           <HeroBigText />
           <BuyNowButton />
@@ -30,11 +30,11 @@ export default function Hero() {
           <MouseParallaxChild
             factorX={0.5}
             factorY={0.6}
-            className="w-full h-full"
+            className="h:full w-full grid place-content-center"
           >
             <img
               ref={bigCookieRef}
-              className="w-full h-full hover:opacity-20 transition duration-700 "
+              className="mx-auto w-3/4 md:w-full aspect-square hover:opacity-20 transition duration-700 "
               src={cookieImg}
               alt=""
             />
