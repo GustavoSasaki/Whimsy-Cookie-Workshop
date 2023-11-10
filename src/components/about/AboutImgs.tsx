@@ -52,6 +52,6 @@ export function AboutImgs() {
 }
 
 const backgroundImg =
-  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/snapbythree-my-g6e641CiHFQ-unsplash.jpg";
+  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/coffee.jpg";
 const foregroundImg =
-  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/may-lawrence-3R6g3Iovipk-unsplash.jpg";
+  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/aboutForeground.jpg";

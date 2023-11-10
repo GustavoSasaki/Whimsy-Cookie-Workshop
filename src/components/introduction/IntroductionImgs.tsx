@@ -57,6 +57,6 @@ export function IntroductionImgs() {
 }
 
 const cookieImg =
-  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/arvid-skywalker-aGhS-JQMB_g-unsplash.jpg";
+  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/introductionCookie.jpg";
 const bakingImg =
-  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/image.jpg";
+  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/baking";

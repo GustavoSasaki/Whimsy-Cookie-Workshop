@@ -45,7 +45,7 @@ const cookieRecepis: Recipe[] = [
     {
         name: 'Chai Spice Cookie',
         price: '5,00',
-        img: 'https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/nha-van-oV2SnS8ooWc-unsplash.jpg',
+        img: 'https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/chaiCookie',
         description: 'finely ground chai tea blend, aromatic ground cinnamon, ground cardamom, ground ginger, unsalted butter, granulated sugar, all-purpose flour'
     },
     {
@@ -56,7 +56,7 @@ const cookieRecepis: Recipe[] = [
     {
         name: 'Matcha White Zen Cookie',
         price: '6,00',
-        img: 'https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/may-lawrence-5AHzrwti8t0-unsplash.jpg',
+        img: 'https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/cookieMatcha.jpg',
         description: 'vibrant matcha green tea powder, creamy white chocolate chips, unsalted butter, granulated sugar, all-purpose flour'
     }
 ]
@@ -72,7 +72,7 @@ const beverageRecepis: Recipe[] = [
         name: 'Berry Hibiscus Iced Tea',
         price: '12,00',
         description: 'A vibrant hibiscus herbal tea served over ice, infused with a medley of ripe mixed berries and a hint of citrus.',
-        img: 'https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/max-griss-X3Sinj7qZGc-unsplash.jpg'
+        img: 'https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/tea.jpg'
     },
     {
         name: 'Espresso Elegance',

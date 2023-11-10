@@ -87,4 +87,4 @@ export default function ShopImage() {
 }
 
 const imgShop =
-  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/ruben-ramirez-xhKG01FN2uk-unsplash.jpg";
+  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/shop";

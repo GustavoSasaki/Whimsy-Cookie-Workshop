@@ -59,4 +59,4 @@ export default function Hero() {
 const dotsImg =
   "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/dots-left.png";
 const cookieImg =
-  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/hero";
+  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/hero.png";

@@ -41,4 +41,4 @@ export function Nav() {
 }
 
 const logoImg =
-  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/logo2";
+  "https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/cookies-sanca/logo.png";
