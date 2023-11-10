@@ -36,7 +36,7 @@ export default function About() {
             transport our customers to simpler times, where cookies were more
             than just treats; they were gateways to cherished memories.
             <br className="mb-4" />
-            As we've grown, our commitment to quality, community, and
+            As we&apos;ve grown, our commitment to quality, community, and
             sustainability has remained unwavering. We proudly source local
             ingredients, support eco-conscious practices, and aim to be a warm,
             inviting space for São Carlos and beyond.

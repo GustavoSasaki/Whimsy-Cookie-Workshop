@@ -6,7 +6,8 @@ import { ScrollingText } from "./ScrollingText";
 
 //to-do
 //put button to buy in whattsup
-//reduce mb of images
+//make a good mobile menu
+//fix next images :p
 
 export default function ShopImage() {
   const isMobile = useContext(IsMobileContext);
