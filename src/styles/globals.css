@@ -13,7 +13,14 @@ main {
     --color-hero: 133 173 121;
     --color-hero-dark: 86 125 75;
     --color-contact-light: 248 113 113;
+    --container-padding: 4%;
+
+    @media (max-width: 768px) {
+      --container-padding: 15px;
+    }
   }
+
+    
 }
 
 @layer components {
@@ -23,24 +30,24 @@ main {
   }
 
   .gu-container {
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
     width: min(100vw, 900px);
     margin-left: auto;
     margin-right: auto;
   }
 
   .section-container {
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
     width: min(100vw, 1100px);
     margin-left: auto;
     margin-right: auto;
   }
 
   .menu-container {
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: var(--container-padding);
+    margin-right: var(--container-padding);
     max-width: min(100vw, 1100px);
   }
 

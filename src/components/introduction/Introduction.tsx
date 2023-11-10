@@ -12,9 +12,9 @@ export default function Introduction() {
         <p className="text-introduction-light">{"Sweet memories"}</p>
       </h2>
 
-      <div className="flex text-2xl font-medium">
+      <div className="flex text-2xl font-medium flex-col lg:flex-row gap-28 lg:gap-8">
         <div
-          className="pt-10"
+          className="pt-10 max-w-[65ch] "
           style={{
             flex: "1 1 0%",
           }}
