@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import {
   AiOutlinePhone,
   AiOutlineWhatsApp,
@@ -8,9 +8,11 @@ import {
   AiFillInstagram,
   AiFillFacebook,
 } from "react-icons/ai";
+import { IsMobileContext } from "../hero/IsMobileContextProvider";
 
 export default function Address() {
   const addressRef = useRef(null);
+  const isMobile = useContext(IsMobileContext);
 
   const { scrollYProgress } = useScroll({
     target: addressRef,
@@ -30,7 +32,7 @@ export default function Address() {
       className="text-xl p-3 font-medium text-shadow-sm"
       ref={addressRef}
       style={{
-        y,
+        y:(isMobile ? 0 : y),
       }}
     >
       <div className="flex mb-3">

@@ -39,7 +39,7 @@ export default function ContactMap() {
 
   return (
     <motion.div
-      className=" w-7/12 max-w-[1000px]"
+      className=" mt-8 md:mt-0 w-full md:w-7/12 max-w-[1000px]"
       ref={mapRef}
       style={{
         y,

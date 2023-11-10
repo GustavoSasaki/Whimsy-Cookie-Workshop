@@ -7,20 +7,23 @@ import Hero from "@/components/hero/Hero";
 import { NavContextProvider } from "@/components/hero/NavContextProvider";
 import ShopImage from "@/components/shop image/ShopImage";
 import { Menu } from "@/components/menu/Menu";
+import { IsMobileContextProvider } from "@/components/hero/IsMobileContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main className="min-h-full">
-      <NavContextProvider>
-        <Hero />
-        <Introduction />
-        <Menu />
-        <About />
-        <Contact />
-        <ShopImage />
-      </NavContextProvider>
+      <IsMobileContextProvider>
+        <NavContextProvider>
+          <Hero />
+          <Introduction />
+          <Menu />
+          <About />
+          <Contact />
+          <ShopImage />
+        </NavContextProvider>
+      </IsMobileContextProvider>
       <Footer />
     </main>
   );
