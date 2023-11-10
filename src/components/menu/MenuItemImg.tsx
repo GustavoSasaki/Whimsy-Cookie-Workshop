@@ -25,7 +25,7 @@ export function MenuItemImg({ name, img }: { name: string; img: string }) {
         <motion.img ref={addressRef}
             style={{ opacity, filter, scale }}
             alt={name}
-            src={img} className=" my-4  md:my-0 md:absolute top-[100px] bottom-0 right-0 left-0 w-[min(200px,60%)] md:max-w-none md:w-[150px] aspect-square md:aspect-[8/10] object-cover m-auto rounded-md mb-3 md:mb-0" />
+            src={img} className=" my-4  md:my-0 md:absolute top-[100px] md:-top-[50px] bottom-0 right-0 left-0 w-[min(200px,60%)] md:max-w-none md:w-[150px] aspect-square md:aspect-[8/10] object-cover m-auto rounded-md mb-3 md:mb-0" />
     )
 }
 
