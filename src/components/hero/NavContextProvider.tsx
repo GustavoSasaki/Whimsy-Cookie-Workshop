@@ -1,17 +1,17 @@
 import { createContext, MutableRefObject, useRef } from "react";
 
-export type HtmlRef = MutableRefObject<HTMLDivElement> | null;
+export type HtmlRef = MutableRefObject<HTMLDivElement | null> ;
 
-export const AboutRefContext = createContext<HtmlRef>(null);
-export const HomeRefContext = createContext<HtmlRef>(null);
-export const MenuRefContext = createContext<HtmlRef>(null);
-export const ContactRefContext = createContext<HtmlRef>(null);
+export const AboutRefContext = createContext<HtmlRef | null>(null);
+export const HomeRefContext = createContext<HtmlRef | null>(null);
+export const MenuRefContext = createContext<HtmlRef | null>(null);
+export const ContactRefContext = createContext<HtmlRef | null>(null);
 
 export function NavContextProvider({ children }: { children: JSX.Element[] }) {
-  const aboutRef = useRef<HtmlRef>(null);
-  const hometRef = useRef<HtmlRef>(null);
-  const menutRef = useRef<HtmlRef>(null);
-  const contactRef = useRef<HtmlRef>(null);
+  const aboutRef = useRef<HtmlRef>(null) as HtmlRef;
+  const hometRef = useRef<HtmlRef>(null) as HtmlRef;
+  const menutRef = useRef<HtmlRef>(null) as HtmlRef;
+  const contactRef = useRef<HtmlRef>(null) as HtmlRef;
 
   return (
     <AboutRefContext.Provider value={aboutRef}>

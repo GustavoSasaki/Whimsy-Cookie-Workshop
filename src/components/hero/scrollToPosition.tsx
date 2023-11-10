@@ -1,7 +1,7 @@
 import { getPrefersReducedMotion } from "./getPrefersReducedMotion";
 import { HtmlRef } from "./NavContextProvider";
 
-export const scrollToPosition = (ref: HtmlRef) => {
+export const scrollToPosition = (ref: HtmlRef | null) => {
   if (!ref?.current) return;
 
   const reduceMotion = getPrefersReducedMotion();
