@@ -1,5 +1,6 @@
 import { useScroll, useSpring, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import Image from 'next/image'
 
 export function AboutImgs() {
   const imageRef = useRef(null);
@@ -25,28 +26,38 @@ export function AboutImgs() {
         className=" lg:left-0 left-[10%]
       overflow-hidden relative top-0  mx-auto lg:mr-0 rounded-lg aspect-[7/9] w-8/12 lg:aspect-[6/9] z-40  mb-[16vw]"
       >
-        <motion.img
+        <motion.div
           ref={imageRef}
           className="relative top-[-13%] h-[128%] w-full rounded-lg"
           style={{
             y: foregroundY,
           }}
-          src={foregroundImg}
-          alt="cookies"
-        />
+        >
+          <Image
+            fill={true}
+            className="relative"
+            src={foregroundImg}
+            alt="cookies"
+          />
+        </motion.div >
       </div>
 
       <div className="absolute bg-gradient-to-tr lg:bg-gradient-to-br from-about-lighter to-about w-5/12 aspect-square -top-[10%] lg:top-[28vw]  left-[69%] lg:left-[40%] z-10 rounded-lg" />
 
       <div className="absolute w-6/12  aspect-[6/9] lg:top-[14vw] top-[25%] lg:bottom-0 -left-[9%] lg:left-0 z-20 overflow-hidden rounded-lg">
-        <motion.img
-          src={backgroundImg}
+        <motion.div
           className="rounded-lg top-[-11%] h-[124%] w-full relative"
           style={{
             y: backgroundY,
           }}
-          alt="cofee"
-        />
+        >
+          <Image
+            fill={true}
+            className="relative"
+            src={backgroundImg}
+            alt="cofee"
+          />
+        </motion.div>
       </div>
     </div>
   );

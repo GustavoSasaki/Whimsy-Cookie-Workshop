@@ -2,11 +2,14 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useContext, useRef } from "react";
 import { IsMobileContext } from "../hero/IsMobileContextProvider";
 import { ScrollingText } from "./ScrollingText";
+import Image from 'next/image'
 
 //to-do
 //put button to buy in whattsup
 //make a good mobile menu
-//fix next images :p
+//add head/title/icon
+//fix shopIMg text in mobile
+//change contac color
 
 export default function ShopImage() {
   const isMobile = useContext(IsMobileContext);
@@ -82,18 +85,23 @@ export default function ShopImage() {
           </div>
 
           <div className="relative h-screen  w-screen  md:w-[70vw] overflow-x-hidden mx-auto z-0 ">
-            <motion.img
-              src={imgShop}
+            <motion.div
               className="absolute top-[10vh] h-[80vh] w-[130vw] md:w-[110vw] left-0 max-w-none object-cover rounded-lg"
               style={{
                 x: xImgs,
               }}
-              alt="Whimsy Cookie Workshop Shop"
-            />
+            >
+              <Image
+                src={imgShop}
+                alt="Whimsy Cookie Workshop Shop"
+                fill={true}
+                className="relative"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

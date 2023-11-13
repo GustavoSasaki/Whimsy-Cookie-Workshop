@@ -1,5 +1,6 @@
 import { useScroll, useSpring, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import Image from 'next/image'
 
 export function IntroductionImgs() {
   const imageRef = useRef(null);
@@ -25,15 +26,20 @@ export function IntroductionImgs() {
       mx-auto -left-[16%] md:left-auto
       "
       >
-        <motion.img
+        <motion.div
           ref={imageRef}
           className="relative top-[-13%] h-[128%] w-full rounded-lg"
           style={{
             y: bakingY,
           }}
-          alt="baking cookies"
-          src={bakingImg}
-        />
+        >
+          <Image
+            className="relative"
+            fill={true}
+            src={bakingImg}
+            alt="baking cookies"
+          />
+        </motion.div>
       </div>
 
       <div
@@ -48,14 +54,20 @@ export function IntroductionImgs() {
           md:left-[60%] lg:left-auto left-[50%]
         "
       >
-        <motion.img
-          src={cookieImg}
+        <motion.div
           className="rounded-lg top-[-11%] h-[124%] w-full relative"
-          alt="cookies"
           style={{
             y: cookieY,
           }}
-        />
+        >
+          <Image
+            className="relative"
+            fill={true}
+            src={cookieImg}
+            alt="cookies"
+          />
+
+        </motion.div>
       </div>
     </div>
   );

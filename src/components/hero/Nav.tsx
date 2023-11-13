@@ -5,6 +5,7 @@ import {
   MenuRefContext,
 } from "./NavContextProvider";
 import { scrollToPosition } from "./scrollToPosition";
+import Image from 'next/image'
 
 export function Nav() {
   const aboutRef = useContext(AboutRefContext);
@@ -24,11 +25,12 @@ export function Nav() {
           about
         </button>
         <a href="." className="hover:scale-110 transition-all">
-          <img
-            className=" w-[80px] h-[80px]"
+          <Image
+            width={80}
+            height={80}
             src={logoImg}
             alt="Whimsy Cookie Workshop"
-          ></img>
+          />
         </a>
         <button
           className="hover:text-white"
