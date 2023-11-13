@@ -18,6 +18,7 @@ export default function Hero() {
       ref={sectionRef}
       className={`hero-height bg-gradient-to-bl from-hero to-hero-dark text-hero-typograph relative w-full`}
       style={{ boxShadow: "0px 10px 10px rgb(var(--color-hero-dark)/0.5)" }}
+      aria-label="Whimsy Cookie Workshop"
     >
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
         <SkipNav />

@@ -11,9 +11,13 @@ export default function About() {
       tabIndex={-1}
       ref={aboutRef}
       className="bg-white text-cookie section-container my-24"
+      aria-labelledby="about-title"
     >
       <div id="about-grid" className="grid text-xl font-medium gap-10 ">
-        <h2 className="uppercase text-6xl text-about font-bold [grid-area:title]">
+        <h2 
+          id="about-title"
+          className="uppercase text-6xl text-about font-bold [grid-area:title]"
+        >
           {"About "}
           <span className="text-about-light">Us</span>
         </h2>

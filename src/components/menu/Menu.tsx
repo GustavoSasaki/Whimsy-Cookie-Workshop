@@ -12,9 +12,12 @@ export function Menu() {
       style={{
         boxShadow: "0px 10px 10px rgb(22 163 74/0.5)",
       }}
+      aria-labelledby="menu-title"
     >
       <div tabIndex={-1} ref={menuRef} className="menu-container max-w-[900px]">
-        <h2 className="uppercase text-6xl font-bold text-shadow text-white pb-5">
+        <h2
+          id="menu-title"
+          className="uppercase text-6xl font-bold text-shadow text-white pb-5">
           The Menu
         </h2>
         <div className="bg-white h-full rounded-lg p-12 flex flex-col gap-20">

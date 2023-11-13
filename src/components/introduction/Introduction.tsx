@@ -3,10 +3,13 @@ import { ReadMoreButton } from "./ReadMoreButton";
 
 export default function Introduction() {
   return (
-    <section className="bg-white text-cookie section-container mt-28 my-40 md:my-28">
+    <section
+      className="bg-white text-cookie section-container mt-28 my-40 md:my-28"
+      aria-labelledby="introduction-title"
+    >
       <h2
-        className="uppercase text-6xl text-introduction
-             font-bold"
+        className="uppercase text-6xl text-introduction font-bold"
+        id="introduction-title"
       >
         {"Cookie Bliss, "}
         <p className="text-introduction-light">{"Sweet memories"}</p>

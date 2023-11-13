@@ -14,9 +14,13 @@ export default function Contact() {
       style={{
         boxShadow: "0px 10px 10px rgb(var(--color-contact-light)/0.5)",
       }}
+      aria-labelledby="contact-title"
     >
       <div className="div section-container">
-        <h2 className="uppercase text-6xl font-bold text-shadow ">
+        <h2
+          id="contact-title"
+          className="uppercase text-6xl font-bold text-shadow "
+        >
           Contact us
         </h2>
         <address className="flex mt-10 flex-col-reverse md:flex-row gap-5 md:gap-0">
