@@ -5,9 +5,7 @@ import { ScrollingText } from "./ScrollingText";
 import Image from 'next/image'
 
 //to-do
-//put button to buy in whattsup
 //make a good mobile menu
-//add head/title/icon
 //fix shopIMg text in mobile
 
 export default function ShopImage() {

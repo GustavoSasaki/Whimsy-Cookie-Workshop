@@ -34,6 +34,17 @@ export function Menu() {
           </MenuCategory>
         </div>
       </div>
+
+      <div className="group mx-auto relative  w-[fit-content] mt-11  hover:scale-105 transition-all">
+        <a
+          href="https://www.whatsapp.com/?lang=pt_BR"
+          className="relative text-3xl bg-gradient-to-bl from-red-400 to-red-500 text-white mx-auto rounded-2xl p-4 z-20"
+        >
+          Order Online
+        </a>
+
+        <div className="absolute inset-0 bg-gradient-to-bl from-red-400 to-red-500 blur-md group-hover:blur-0 transition-all z-10 rounded-2xl animate-tilt p-4 opacity-50 group-hover:opacity-100"></div>
+      </div>
     </section>
   );
 }
