@@ -15,7 +15,7 @@ const config: Config = {
           typograph: "#CDE8C5"
         },
         contact: {
-          DEFAULT:'#F64141',
+          DEFAULT:'#bd3131',
           light:'rgb(var(--color-contact-light) / <alpha-value>)',
           icon:"#564138"
         },

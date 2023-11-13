@@ -43,7 +43,7 @@ export function MenuItemImg({ name, img }: { name: string; img: string }) {
       <Image
         alt={name}
         src={img}
-        className="relative"
+        className="relative rounded-md"
         fill={true}
       />
     </motion.div>

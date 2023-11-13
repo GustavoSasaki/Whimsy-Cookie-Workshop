@@ -9,7 +9,6 @@ import Image from 'next/image'
 //make a good mobile menu
 //add head/title/icon
 //fix shopIMg text in mobile
-//change contac color
 
 export default function ShopImage() {
   const isMobile = useContext(IsMobileContext);
