@@ -1,6 +1,6 @@
 import { useScroll, useSpring, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 export function AboutImgs() {
   const imageRef = useRef(null);
@@ -39,7 +39,7 @@ export function AboutImgs() {
             src={foregroundImg}
             alt="cookies"
           />
-        </motion.div >
+        </motion.div>
       </div>
 
       <div className="absolute bg-gradient-to-tr lg:bg-gradient-to-br from-about-lighter to-about w-5/12 aspect-square -top-[10%] lg:top-[28vw]  left-[69%] lg:left-[40%] z-10 rounded-lg" />

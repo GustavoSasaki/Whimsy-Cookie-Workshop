@@ -2,7 +2,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useContext, useEffect, useRef } from "react";
 import { IsMobileContext } from "../hero/IsMobileContextProvider";
 import { ScrollingText } from "./ScrollingText";
-import Image from 'next/image'
+import Image from "next/image";
 
 //to-do
 //make a good mobile menu
@@ -30,20 +30,20 @@ export default function ShopImage() {
 
   const xPerfectCookies = useTransform(
     yProgressSpring,
-    [1,0.55, 0.05],
-    ["100vw","100vw", "-100vw"],
+    [1, 0.55, 0.05],
+    ["100vw", "100vw", "-100vw"],
   );
 
   const xCoolMusic = useTransform(
     yProgressSpring,
-    [1,0.8, 0.2],
-    ["100vw","100vw", "-100vw"],
+    [1, 0.8, 0.2],
+    ["100vw", "100vw", "-100vw"],
   );
 
   const xGoodVibes = useTransform(
     yProgressSpring,
-    [1,0.35,0],
-    ["100vw","100vw", "-80vw"],
+    [1, 0.35, 0],
+    ["100vw", "100vw", "-80vw"],
   );
 
   return (
@@ -58,11 +58,11 @@ export default function ShopImage() {
             height={"top-[15vh]"}
             x={xPerfectCookies}
           />
-            <ScrollingText
-              text={"COOL MUSIC"}
-              height={"top-[50vh]"}
-              x={xCoolMusic}
-            />
+          <ScrollingText
+            text={"COOL MUSIC"}
+            height={"top-[50vh]"}
+            x={xCoolMusic}
+          />
           <ScrollingText
             text={"GOOD VIBES"}
             height={"top-[75vh]"}
@@ -86,7 +86,7 @@ export default function ShopImage() {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 

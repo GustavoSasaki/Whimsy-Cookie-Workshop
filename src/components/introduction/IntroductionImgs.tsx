@@ -1,6 +1,6 @@
 import { useScroll, useSpring, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 export function IntroductionImgs() {
   const imageRef = useRef(null);
@@ -66,7 +66,6 @@ export function IntroductionImgs() {
             src={cookieImg}
             alt="cookies"
           />
-
         </motion.div>
       </div>
     </div>

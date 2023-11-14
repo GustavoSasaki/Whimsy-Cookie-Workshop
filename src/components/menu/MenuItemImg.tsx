@@ -1,7 +1,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useContext, useRef } from "react";
 import { IsMobileContext } from "../hero/IsMobileContextProvider";
-import Image from 'next/image'
+import Image from "next/image";
 
 export function MenuItemImg({ name, img }: { name: string; img: string }) {
   const isMobile = useContext(IsMobileContext);
@@ -40,12 +40,7 @@ export function MenuItemImg({ name, img }: { name: string; img: string }) {
       style={{ opacity, filter, scale }}
       className=" my-4  md:my-0 md:absolute top-[100px] md:-top-[50px] bottom-0 right-0 left-0 w-[min(200px,60%)] md:max-w-none md:w-[150px] aspect-square md:aspect-[8/10] object-cover m-auto rounded-md mb-3 md:mb-0"
     >
-      <Image
-        alt={name}
-        src={img}
-        className="relative rounded-md"
-        fill={true}
-      />
+      <Image alt={name} src={img} className="relative rounded-md" fill={true} />
     </motion.div>
   );
 }

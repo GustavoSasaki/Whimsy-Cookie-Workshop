@@ -5,7 +5,7 @@ import {
   MenuRefContext,
 } from "./NavContextProvider";
 import { scrollToPosition } from "./scrollToPosition";
-import Image from 'next/image'
+import Image from "next/image";
 
 export function Nav() {
   const aboutRef = useContext(AboutRefContext);

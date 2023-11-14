@@ -1,6 +1,6 @@
 import { createContext, MutableRefObject, useRef } from "react";
 
-export type HtmlRef = MutableRefObject<HTMLDivElement | null> ;
+export type HtmlRef = MutableRefObject<HTMLDivElement | null>;
 
 export const AboutRefContext = createContext<HtmlRef | null>(null);
 export const HomeRefContext = createContext<HtmlRef | null>(null);

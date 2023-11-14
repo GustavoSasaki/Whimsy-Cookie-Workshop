@@ -13,7 +13,7 @@ export default function About() {
       aria-labelledby="about-title"
     >
       <div id="about-grid" className="grid text-xl font-medium gap-10 ">
-        <h2 
+        <h2
           id="about-title"
           className="uppercase text-6xl text-about font-bold [grid-area:title]"
         >

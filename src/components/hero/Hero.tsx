@@ -7,7 +7,7 @@ import { BuyNowButton } from "./BuyNowButton";
 import { HeroBigText } from "./HeroBigText";
 import { Nav } from "./Nav";
 import { SkipNav } from "./SkipNav";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,18 +44,10 @@ export default function Hero() {
         </div>
 
         <div className="absolute left-0 top-0 z-10 w-[25%] h-full pointer-events-none animate-[goDown_0.8s_0.1s_both]">
-          <Image
-            fill={true}
-            src={dotsImg}
-            alt=""
-          />
+          <Image fill={true} src={dotsImg} alt="" />
         </div>
-        <div className="absolute right-0 top-0 z-10 w-[25%] h-full pointer-events-none animate-[goDown_0.8s_0.1s_both]" >
-          <Image
-            fill={true}
-            src={dotsImg}
-            alt=""
-          />
+        <div className="absolute right-0 top-0 z-10 w-[25%] h-full pointer-events-none animate-[goDown_0.8s_0.1s_both]">
+          <Image fill={true} src={dotsImg} alt="" />
         </div>
       </MouseParallaxContainer>
     </section>
