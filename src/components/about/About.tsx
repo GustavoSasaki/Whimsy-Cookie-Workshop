@@ -34,12 +34,12 @@ export default function About() {
             since 2015. From the very first batch of cookies, we aimed to
             transport our customers to simpler times, where cookies were more
             than just treats; they were gateways to cherished memories.
-            <br className="mb-4" />
+            <br className="h-4 block" />
             As we&apos;ve grown, our commitment to quality, community, and
             sustainability has remained unwavering. We proudly source local
             ingredients, support eco-conscious practices, and aim to be a warm,
             inviting space for São Carlos and beyond.
-            <br className="mb-4" />
+            <br className="h-4 block" />
             Join us at Whimsy Cookie Workshop and be part of our journey, where
             every cookie is a step back in time and every visit is an
             opportunity to create sweet memories.

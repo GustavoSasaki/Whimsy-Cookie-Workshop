@@ -3,7 +3,7 @@ import Image from "next/image";
 export function JustChill() {
   return (
     <section
-      className="min-h-screen text-cookie pb-8"
+      className="min-h-screen text-cookie pb-20"
       aria-labelledby="chill-title"
     >
       <div className="flex flex-col-reverse md:flex-row gap-12 md:gap-[5%] lg:gap-[10%]">

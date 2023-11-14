@@ -29,25 +29,25 @@ export default function ShopImage() {
   );
 
   const xPerfectCookies = useTransform(
-    yProgressSpring,
-    [1, 0.55, 0.05],
-    ["100vw", "100vw", "-100vw"],
+    scrollYProgress,
+    [1, 0.55, 0.00],
+    ["100vw", "100vw", "-140vw"],
   );
 
   const xCoolMusic = useTransform(
-    yProgressSpring,
-    [1, 0.8, 0.2],
-    ["100vw", "100vw", "-100vw"],
+    scrollYProgress,
+    [1, 0.8, 0.1],
+    ["100vw", "100vw", "-140vw"],
   );
 
   const xGoodVibes = useTransform(
-    yProgressSpring,
+    scrollYProgress,
     [1, 0.35, 0],
-    ["100vw", "100vw", "-80vw"],
+    ["100vw", "100vw", "-100vw"],
   );
 
   return (
-    <div className="mt-28 mb-32">
+    <div className="mt-28 mb-16">
       <div
         className="relative h-[600vh] md:h-[500vh] mx-auto"
         ref={containerRef}
