@@ -1,12 +1,11 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { IsMobileContext } from "../hero/IsMobileContextProvider";
 import { ScrollingText } from "./ScrollingText";
 import Image from 'next/image'
 
 //to-do
 //make a good mobile menu
-//fix shopIMg text in mobile
 
 export default function ShopImage() {
   const isMobile = useContext(IsMobileContext);
@@ -25,34 +24,32 @@ export default function ShopImage() {
 
   const xImgs = useTransform(
     yProgressSpring,
-    [0.2, 0.8],
-    !isMobile ? ["-40vw", "0vw"] : ["-30vw", "0vw"],
+    [0.8, 0.2],
+    !isMobile ? ["0vw", "-40vw"] : ["0vw", "-30vw"],
   );
 
   const xPerfectCookies = useTransform(
     yProgressSpring,
-    [0, 0.8],
-    ["-120vw", "340vw"],
+    [1,0.55, 0.05],
+    ["100vw","100vw", "-100vw"],
   );
 
   const xCoolMusic = useTransform(
     yProgressSpring,
-    [0, 0.8],
-    ["-200vw", "170vw"],
+    [1,0.8, 0.2],
+    ["100vw","100vw", "-100vw"],
   );
 
   const xGoodVibes = useTransform(
     yProgressSpring,
-    [0, 0.8],
-    ["-120vw", "250vw"],
+    [1,0.35,0],
+    ["100vw","100vw", "-80vw"],
   );
-
-  const xLast = useTransform(yProgressSpring, [0, 0.8], ["-60vw", "440vw"]);
 
   return (
     <div className="mt-28 mb-32">
       <div
-        className="relative h-[500vh] md:h-[400vh] mx-auto"
+        className="relative h-[600vh] md:h-[500vh] mx-auto"
         ref={containerRef}
       >
         <div className="sticky top-0 rounded-lg h-screen w-screen z-0 overflow-x-hidden ">
@@ -61,29 +58,20 @@ export default function ShopImage() {
             height={"top-[15vh]"}
             x={xPerfectCookies}
           />
-          <div className="hidden lg:block">
             <ScrollingText
               text={"COOL MUSIC"}
               height={"top-[50vh]"}
               x={xCoolMusic}
             />
-          </div>
           <ScrollingText
             text={"GOOD VIBES"}
             height={"top-[75vh]"}
             x={xGoodVibes}
           />
-          <div className="hidden lg:block">
-            <ScrollingText
-              text={"HAVE A NICE DAY"}
-              height={"top-[90vh]"}
-              x={xLast}
-            />
-          </div>
 
           <div className="relative h-screen  w-screen  md:w-[70vw] overflow-x-hidden mx-auto z-0 ">
             <motion.div
-              className="absolute top-[10vh] h-[80vh] w-[130vw] md:w-[110vw] left-0 max-w-none object-cover rounded-lg"
+              className="absolute top-[10vh] h-[80vh] w-[130vw] md:w-[110vw] left-0 max-w-none rounded-lg"
               style={{
                 x: xImgs,
               }}
@@ -92,7 +80,7 @@ export default function ShopImage() {
                 src={imgShop}
                 alt="Whimsy Cookie Workshop Shop"
                 fill={true}
-                className="relative"
+                className="relative object-cover"
               />
             </motion.div>
           </div>

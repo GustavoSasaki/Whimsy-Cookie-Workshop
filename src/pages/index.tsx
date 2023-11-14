@@ -8,6 +8,7 @@ import { NavContextProvider } from "@/components/hero/NavContextProvider";
 import ShopImage from "@/components/shop image/ShopImage";
 import { Menu } from "@/components/menu/Menu";
 import { IsMobileContextProvider } from "@/components/hero/IsMobileContextProvider";
+import { JustChill } from "@/components/just chill/JustChill";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
           <About />
           <Contact />
           <ShopImage />
+          <JustChill />
         </NavContextProvider>
       </IsMobileContextProvider>
       <Footer />
