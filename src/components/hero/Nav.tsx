@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import {
   AboutRefContext,
   ContactRefContext,
@@ -6,21 +6,25 @@ import {
 } from "./NavContextProvider";
 import { scrollToPosition } from "./scrollToPosition";
 import Image from "next/image";
+import { MobileNav } from "./MobileNav";
 
 export function Nav() {
   const aboutRef = useContext(AboutRefContext);
   const contactRef = useContext(ContactRefContext);
   const menuRef = useContext(MenuRefContext);
 
+  const [isOpenMobile, setIsOpenMobile] = useState(false)
+
   return (
     <header>
-      <nav className="flex w-full justify-between items-center font-bold text-xl">
-        <a href="." className="hover:text-white">
+      <nav className="relative z-50 flex w-full justify-between items-center font-bold text-xl py-4 h-[94px] 
+      md:bg-auto">
+        <a href="." className="hover:text-white invisible md:visible">
           home
         </a>
         <button
           onClick={(event) => scrollToPosition(aboutRef)}
-          className="hover:text-white"
+          className="hover:text-white hidden md:block"
         >
           about
         </button>
@@ -33,17 +37,19 @@ export function Nav() {
           />
         </a>
         <button
-          className="hover:text-white"
+          className="hover:text-white hidden md:block"
           onClick={() => scrollToPosition(menuRef)}
         >
           menu
         </button>
         <button
           onClick={() => scrollToPosition(contactRef)}
-          className="hover:text-white"
+          className="hover:text-white hidden md:block"
         >
           contact
         </button>
+        <MobileNav isOpen={isOpenMobile}
+          setIsOpen={setIsOpenMobile} />
       </nav>
     </header>
   );

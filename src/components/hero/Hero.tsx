@@ -22,7 +22,7 @@ export default function Hero() {
     >
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
         <SkipNav />
-        <div className="md:gu-container  hero-height flex flex-col pt-2 z-10 relative">
+        <div className="md:gu-container  hero-height flex flex-col">
           <Nav />
           <HeroBigText />
           <BuyNowButton />

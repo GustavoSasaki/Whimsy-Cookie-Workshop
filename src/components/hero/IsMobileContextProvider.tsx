@@ -1,4 +1,4 @@
-import { createContext, MutableRefObject, useRef } from "react";
+import { createContext } from "react";
 import { useResizeDetector } from "react-resize-detector";
 
 export const IsMobileContext = createContext<boolean>(false);

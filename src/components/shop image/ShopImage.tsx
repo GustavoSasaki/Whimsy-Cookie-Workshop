@@ -4,9 +4,6 @@ import { IsMobileContext } from "../hero/IsMobileContextProvider";
 import { ScrollingText } from "./ScrollingText";
 import Image from "next/image";
 
-//to-do
-//make a good mobile menu
-
 export default function ShopImage() {
   const isMobile = useContext(IsMobileContext);
   const containerRef = useRef(null);
