@@ -9,12 +9,14 @@ import ShopImage from "@/components/shop image/ShopImage";
 import { Menu } from "@/components/menu/Menu";
 import { IsMobileContextProvider } from "@/components/hero/IsMobileContextProvider";
 import { JustChill } from "@/components/just chill/JustChill";
+import { HeadBox } from "@/components/HeadBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main className="min-h-full">
+      <HeadBox />
       <IsMobileContextProvider>
         <NavContextProvider>
           <Hero />
