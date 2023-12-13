@@ -1,40 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Whimsy Cookie Workshop
 
-## Getting Started
+Welcome to the whimsical world of [Whimsy Cookie Workshop](https://whimsy-cookie-workshop.vercel.app/), a fictional cookie shop celebrated for its cozy ambiance, where you can relish artisanal cookies and create cherished moments with friends in São Carlos, Brazil.
 
-First, run the development server:
+![Whimsy Cookie Workshop](https://ngchltiyfhxkbpitthto.supabase.co/storage/v1/object/public/portfolio/cookies.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Stack
+- React
+- Tailwind
+- Framer Motion
+- Figma
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Project Purpose and Goal
+The primary goal of this project was to craft a **polished landing page for the cookie shop**. It needed to encompass essential information such as an introduction, menu, address and map while having a cool and inviting vibe.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The design was a unique challenge, I incopotared a lot of vibrant colors alongside smooth animations to create a jovial atmosphere.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Web Stack and Explanation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Figma** was employed for design, streamlining the interactive design process before implementation. 
 
-## Learn More
+The website was built using **React** and styled with **Tailwind**. They are industry-standard tools known for their efficiency in development. Deployment was carried out on Vercel using Next.js, leveraging its excellent free tier. 
 
-To learn more about Next.js, take a look at the following resources:
+**Framer Motion** added smooth animations with a more straightforward API than CSS. **HeadlessUI** was utilized to improve accessibility.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Problems Encountered and Thought Process
+The project was intentionally designed with an expansive approach, resulting in a visually stunning website but a more leisurely development experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+While the abundance of animations contributed to a polished appearance, **I overutilized them**, affecting the site's performance on older machines. The diverse color palette for each section brought vibrancy and charm to the website but proved to be cumbersome. This strategy diluted the shop's branding, lacking a distinctive main color. The use of a vibrant color as a background presented specificity challenges, essentially restricting foreground color choices to white. Moreover, this exponentially increased the number of colors, complicating the design process.
 
-## Deploy on Vercel
+The contact section received special attention, prioritizing easy access to location, phone, and opening hours. Google Maps was integrated for the map functionality. Although the default appearance of Google Maps is acceptable, it lacks personality. Attempts to style it proved excessively time-consuming. Ultimately, I opted for [Snazzy Maps](https://snazzymaps.com/), which offers a variety of appealing public styles.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Lessons Learned and Future Work
+Two significant lessons emerged from this project.
+
+First, researching other websites, utilizing platforms like [Web Design Inspiration](https://www.webdesign-inspiration.com/), proved invaluable. Learning from experienced designers who have tackled similar challenges can provide valuable insights. However, it's essential not to adopt all their tricks at once. 
+
+Second, understanding when to narrow down the scope is crucial. Limiting animations, color palettes, text, and featured elements is essential to ensure timely project delivery.
+
+## Links
+- [Website](https://whimsy-cookie-workshop.vercel.app/)
